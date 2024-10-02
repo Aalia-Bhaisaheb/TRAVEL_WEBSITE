@@ -142,22 +142,25 @@
                 </button>
               </div>
             </div>
+
+            <!-- signin -->
+
             <div class="col-md-7 col-sm-12 shadow-lg px-4 pt-5 pb-2">
               <div id="signInForm" class="d-block">
               <p class="fs-2 text-center">Sign In</p>
               <div class="contain pt-4">
-                <form>
+                <form method="POST" action="/login">
                   <!-- Email input -->
                   <div data-mdb-input-init class="form-outline mb-4 pt-3">
                   <label class="form-label" for="form2Example1_signin">Email address</label>
-                  <input type="email" id="form2Example1_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Email-Address">
+                  <input type="email" id="form2Example1_signin" name="form2Example1_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Email-Address">
                   </div>
                   </div>
                 
                   <!-- Password input -->
                   <div data-mdb-input-init class="form-outline mb-4 pt-2">
                   <label class="form-label" for="form2Example2_signin">Password</label>
-                  <input type="password" id="form2Example2_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Password"/>
+                  <input type="password" id="form2Example2_signin"  name="form2Example2_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Password"/>
                   </div>
                 
                   <!-- 2 column grid layout for inline styling -->
@@ -185,26 +188,32 @@
                     <a href="#" id="showSignUpLink" data-toggle="modal" data-target="#exampleModal2">Register</a>
                   </div>                
                 </form>
+
+          
+                 
                 <div class="pr text-center">
                 By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html" class="privacy"rel="no-referrer" rel="noopener">Privacy Policy</a>,<a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
                 </div>
               </div>
+
+                <!-- signup -->
+
               <div id="signUpForm" class="form-container d-none">
                 <p class="fs-2 text-center">Sign Up</p>
-                <form>
+                <form method="post" action="/signup">
                   <!-- Sign Up Form Fields -->
                   <div data-mdb-input-init class="form-outline mb-4 pt-3">
                     <label class="form-label" for="form2Example1_signup">Email address</label>
-                    <input type="email" id="form2Example1_signup" class="form-control shadow-none border-secondary" placeholder="Enter Email-Address">
+                    <input type="email" id="form2Example1_signup" name="form2Example1_signup" class="form-control shadow-none border-secondary" placeholder="Enter Email-Address">
                   </div>
                   <div data-mdb-input-init class="form-outline mb-4 pt-2">
                     <label class="form-label" for="form2Example2_signup">Password</label>
-                    <input type="password" id="form2Example2_signup" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                    <input type="password" id="form2Example2_signup" name="form2Example2_signup" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
                     <small id="passwordHelp" class="form-text d-none">Password should contain at least 8 characters and one special character.</small>
                   </div>
                   <div data-mdb-input-init class="form-outline mb-4 pt-2">
                     <label class="form-label" for="form2Example2_confirm">Confirm Password</label>
-                    <input type="password" id="form2Example2_confirm" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                    <input type="password" id="form2Example2_confirm" name="form2Example2_confirm" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
                   </div>
                   <div class="d-grid gap-2">
                     <button class="btn btn-primary shadow-none" type="submit">Sign Up</button>
