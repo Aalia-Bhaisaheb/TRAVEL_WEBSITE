@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="style.css"> 
+  <link rel="stylesheet" href="package.css">
+</head>
+<body>
+<div class="holiday-package">
+  
+  <nav class="navbar navbar-expand-lg bg-white shadow pb-0" id="nav-placeholder">
+    <div class="container-fluid">
+      <a class="navbar-brand px-5 ms-5" href="#">
+        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <div class="icon-text">
+            <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+          <li class="nav-item">
+            <span class="item-wrapper">
+              <a class="nav-link active mx-3 column navbar-nav hcenter" aria-current="page" href="index.html">
+              <span class="wrapper">
+                <i class="fas fa-home header-icon"></i>
+              </span>
+            </span>
+            <span class="header-icon-text">Home</span></a>
+          </li>
+          </div>
+          <div class="icon-text">
+            <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+          <li class="nav-item">
+            <span class="item-wrapper">
+              <a class="nav-link active mx-3 column navbar-nav hcenter" aria-current="page" href="packages.html"  rel="no-referrer" rel="noopener">
+              <span class="wrapper">
+                <i class="fas fa-suitcase-rolling header-icon" style="color: #4b4c46;"></i></i>
+              </span>
+            </span>
+            <span class="header-icon-text">Packages</span></a>
+          </li>
+          </div>
+          <div class="icon-text">
+            <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+          <li class="nav-item">
+            <span class="item-wrapper">
+              <a class="nav-link active mx-3 column navbar-nav hcenter" aria-current="page" href="trains.html">
+              <span class="wrapper">
+                <i class="fas fa-users" style="color: #4b4c4e;"></i>
+              </span>
+            </span>
+            <span class="header-icon-text">About Us</span></a>
+          </li>
+          </div>
+          <div class="icon-text">
+            <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+          <li class="nav-item">
+            <span class="item-wrapper">
+              <a class="nav-link active mx-4 column navbar-nav hcenter" aria-current="page" href="buses.html">
+              <span class="wrapper bus">
+                <i class="fas fa-phone header-icon" style="color: #4b4c4e;"></i>
+              </span>
+            </span>
+            <span class="header-icon-text">Contact Us</span></a>
+          </li>
+          </div>
+        </ul>
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-primary shadow-none login-button me-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login or Create Account</button>
+      </div>
+    </div>
+  </nav>
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+          <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+        <div class="modal-body p-0">
+          <div class="container g-0">
+            <div class="row px-0 g-0">
+              <div class="d-none d-md-inline col-md-5 ps-3 py-2 pr-0">
+                <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+                  <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                  </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item drk active">
+                      <img src="./images/static/login-modal/slider1.jpg" class="card border-0 d-block w-100" >
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="modal-cont">
+                        <h3>Find your</h3>
+                        <h3>Serenity</h3>
+                        <h3>Book Now!!</h3>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item drk">
+                      <img src="./images/static/login-modal/slider2.jpg" class="card border-0 d-block w-100" >
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="modal-cont">
+                          <h3>Book Now</h3>
+                          <h3>to Dive into</h3>
+                          <h3>the Thrill!!</h3>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item drk">
+                      <img src="./images/static/login-modal/slider3.jpg" class="card border-0 d-block w-100" >
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="modal-cont">
+                          <h3>Secure</h3>
+                          <h3>your Spot</h3>
+                          <h3>Now!!</h3>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="carousel-item drk">
+                      <img src="./images/static/login-modal/slider4.jpg" class="card border-0 d-block w-100" >
+                      <div class="carousel-caption d-none d-md-block">
+                        <div class="modal-cont">
+                          <h3>Don't Miss Out-</h3>
+                          <h3>Grab Your</h3>
+                          <h3>Offers Today!</h3>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+              </div>
+              <div class="col-md-7 col-sm-12 shadow-lg px-4 pt-5 pb-2">
+                <div id="signInForm" class="d-block">
+                <p class="fs-2 text-center">Sign In</p>
+                <div class="contain pt-4">
+                  <form>
+                    <!-- Email input -->
+                    <div data-mdb-input-init class="form-outline mb-4 pt-3">
+                    <label class="form-label" for="form2Example1_signin">Email address</label>
+                    <input type="email" id="form2Example1_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Email-Address">
+                    </div>
+                    </div>
+                  
+                    <!-- Password input -->
+                    <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                    <label class="form-label" for="form2Example2_signin">Password</label>
+                    <input type="password" id="form2Example2_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Password"/>
+                    </div>
+                  
+                    <!-- 2 column grid layout for inline styling -->
+                    <div class="row mb-4">
+                      <!-- <div class="col px-3 g-0">
+                        <div class="form-check">
+                          <input class="form-check-input shadow-none" type="checkbox" value="" id="form2Example31" checked style="cursor: pointer;"/>
+                          <label class="form-check-label" for="form2Example31" style="cursor: pointer;"> Remember me </label>
+                        </div>
+                      </div> -->
+                      <div class="col-sm-12 forgot g-0 text-end">
+                        <!-- Simple link -->
+                        <a href="#!" id="showSignUp">Forgot password?</a>
+                      </div>
+                    </div>
+                    <div class="sign col pt-3">
+                       <!-- Submit button -->
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary shadow-none" type="button">Sign In</button>
+                    </div>
+                    </div>
+                    <!-- Register buttons -->
+                    <div class="text-center pt-4" id="txtContainer_signin">
+                      <a href="#" id="showSignUpLink" data-toggle="modal" data-target="#exampleModal2">Register</a>
+                    </div>                
+                  </form>
+                  <div class="pr text-center">
+                  By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html">Privacy Policy</a>,<a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
+                  </div>
+                </div>
+                <div id="signUpForm" class="form-container d-none">
+                  <p class="fs-2 text-center">Sign Up</p>
+                  <form>
+                    <!-- Sign Up Form Fields -->
+                    <div data-mdb-input-init class="form-outline mb-4 pt-3">
+                      <label class="form-label" for="form2Example1_signup">Email address</label>
+                      <input type="email" id="form2Example1_signup" class="form-control shadow-none border-secondary" placeholder="Enter Email Address">
+                    </div>
+                    <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                      <label class="form-label" for="form2Example2_signup">Password</label>
+                      <input type="password" id="form2Example2_signup" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                      <small id="passwordHelp" class="form-text d-none">Password should contain at least 8 characters and one special character.</small>
+                    </div>
+                    <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                      <label class="form-label" for="form2Example2_confirm">Confirm Password</label>
+                      <input type="password" id="form2Example2_confirm" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                    </div>
+                    <div class="d-grid gap-2">
+                      <button class="btn btn-primary shadow-none" type="button">Sign Up</button>
+                    </div>
+                    <div class="text-center pt-4">
+                      <a href="#" id="showSignInLink">Already have an account? Sign In</a>
+                    </div>
+                    <div class="pr text-center">
+                      By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html">Privacy Policy</a>, <a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
+                    </div>
+                  </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  
+
+  <!--PACKAGES-->
+ <div class="bg-container">
+  <div class="bg">
+    <div class="bg-content">
+      <div class="bg-content content">
+        <h1 class="scroll">Experience the Best<br>
+        with our Holiday<br> Packages</h1>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="dest">
+<div class="destinations_1">
+  <div class="card shadow-lg" style="width: 1300px;">
+    <div class="card-body dest1">
+      <h1>Best Selling Destinations</h1>
+      <div id="carouselExampleControls0" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner dest1">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex" id="places-carousel">
+              <!---show the places card-->
+            </div>
+          </div>
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls0" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls0" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+      </div>
+    </div>
+    </div>
+  </div>
+  
+</div>
+<div class="destinations_2">
+  <div class="card shadow-lg" style="width: 1300px;">
+    <div class="card-body dest1">
+      <h1>Monsoon Bliss Tours</h1>
+      <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner dest1">
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="d-flex" id="monsoon-carousel">
+              <!--show the places card-->
+            </div>
+          </div>
+          
+          
+          <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls0" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls0" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button> -->
+      </div>
+    </div>
+    </div>
+  </div>
+</div>
+
+    <div class="destinations_3">
+    <div class="card shadow-lg" style="width: 1300px;">
+      <div class="card-body dest1">
+        <h1>Adventure Trail Journeys</h1>
+        <div id="carouselExampleControls1" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner dest1">
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="d-flex" id="trekking-carousel">
+                <!--show the places card-->
+                <!-- <div class="card dest1 mx-2 card2" style="width: 16rem;">
+                   <a href="#" target="_blank"><img src="./images/static/packages/ladakh.jpg" class="card-img-top dest1" alt="image">
+                   <div class="overlay-text">Ladakh</div></a>
+                </div> -->
+              </div>
+            </div>
+            
+            
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls0" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls0" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button> -->
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+<div class="footer">
+  <div class="card-footer" id="first-footer">
+    <div class="card-body-footer">
+      <p class="question">Why Book Holidays with JetSet-Journey?</p>
+      <p class="sol">JetSet-Journey, India's leading online travel company, has a profound understanding of Indian consumers travel needs and preferences. It offers a wide range of holiday packages in India and across the world, catering to various segments of travellers. While the dynamic or customized tour and travel packages give consumers an option to create and design their own holiday, the fixed departure holiday packages have a pre-designed itinerary; thus ensuring there is something to meet the holiday needs of every kind of traveller.</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="card-body-footer">
+      <p class="question">How to book Holidays with JetSet-Journey?</p>
+      <p class="sol">The user-friendly JetSet-Journey website make it easy for enthusiastic travellers to plan and book a holiday simply at the click of a button. Just use the filters and select the city you want to visit along with your travel dates, travel duration, specific preferences, if any, on hotels, kind of holiday, etc. and MakeMyTrip offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs. Else, you could also choose hotels of your choice, add sightseeing and activities to your list and have a package ready that best suits your requirement. You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. With MakeMyTrip, planning and buying your ideal holiday has never been easier.</p>
+    </div>
+  </div>
+  <div class="card-footer">
+    <div class="card-body-footer">
+      <p class="question">The Ultimate Guide to Holidaying</p>
+      <p class="sol">India is a land of history and diversity. As a country that enjoys nature's bounty in the form of gorgeous beaches, majestic mountains, colourful deserts and lush forests, it has attracted tourists for centuries now. It's no wonder that India holiday packages are so popular among travellers today. So, if you are planning to spend your holidays in India, we have done the homework for you. To make your holidays unforgettable, read on to know more about this fascinating country! Plan your India tours to various exciting destinations in the country with ease.<br>
+      For a country as old as India, there is a place or a city for everyone. And almost all India holiday packages will give you a glimpse of this. For the offbeat adventurer, there is Ladakh, Kashmir & more; if you are looking for some beach vibes, there are Goa and Andaman. You can choose what you want from the vast list of India tour packages. So plan your holidays in India by booking incredible all India tour packages online. You can make the most out of your India tours by choosing holiday packages that are perfect for you.
+        </p>
+    </div>
+  </div>
+  <hr class="border-bottom border-2 border-dark heading">
+  <p class="visit">Best Destinations</p>
+    <hr class="border-bottom border-2 border-dark line">
+  <div class="card-visit">
+    <div class="card-body-end">
+    <p class="visit-name">Goa</p>
+      <p class="description">
+        The unofficial party place of India, Goa is more than that. It has a great legacy, history and culture that are yet to be explored. But if beaches are what you are looking for, then the state has that too. And that's why, India tours to Goa are a great option to explore the place, according to your interests. Goa holiday packages are also popular because Goa is one of the top places in the world when it comes to nightlife. Find several exciting tour packages and other India holiday packages that let you try Goa's melange of watersports and other fun activities.<br><p class="best-time">Best time to visit: November to February<br><br>
+          Best Places to Visit:</p>
+        <ul class="p-list">
+        <li>Calangute</li>
+        <li>Baga</li>
+        <li>Anjuna</li>
+        <li> Miramar</li>
+        <li> Palolem</li> 
+        <li>Panjim</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <hr class="border-bottom border-1 border-dark line">
+  <div class="card-visit">
+    <div class="card-body-end">
+    <p class="visit-name">Kerela</p>
+      <p class="description">
+        God's own country, Kerala has been a popular tourist destination in India. You can explore it all with India tours to this marvellous destination. With suitable tour packages, you can discover scenic seaside destinations and hill stations in Kerala.
+        <br><p class="best-time">Best time to visit: September to March<br><br>
+          Best Places to Visit:</p>
+        <ul class="p-list">
+          <li>Sree Padmanabhaswamy Temple</li>
+          <li>Francis CSI Church</li>
+          <li>Paradesi Synagogue</li>
+          <li>Eravikulam National Park</li>
+          <li>Varkala Beach</li>
+          <li>Athirappilly Waterfalls</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+  <hr class="border-bottom border-1 border-dark line">
+  <div class="card-visit">
+    <div class="card-body-end">
+    <p class="visit-name"> Kashmir</p>
+      <p class="description">
+      For decades, the Kashmir valley has attracted tourists from all over the world. If you can't plan a vacation on your own, you should check out India tours for Kashmir to help you with an unforgettable holiday. With the right all India tour packages, you can discover lush green valleys, snow-covered peaks and gorgeous wildlife. Your trip packages must include the Chenab, Sindh and Lidder valleys. Don't forget to buy a world-famous Kashmiri shawl and one-of-a-kind handicrafts for your loved ones.<br>
+      <p class="best-time">Best Time to Visit: March to August<br><br>
+        Best Places to Visit:</p>
+      <ul class="p-list">
+        <li>Gulmarg</li>
+        <li>Srinagar</li>
+        <li>Dal Lake</li>
+        <li>Sonamarg</li>
+        <li>Indira Gandhi Tulip Garden</li>
+      </ul></p>
+    </div>
+  </div>
+  <hr class="border-bottom border-1 border-dark line">
+  <div class="card-visit">
+    <div class="card-body-end last-card">
+    <p class="visit-name">Rajasthan</p>
+      <p class="description">
+        If you are looking for mesmerising India tours, then Rajasthan is undoubtedly your destination of choice. From its sprawling forts and historical landmarks to its signature architecture, beautiful lakes and rich culinary traditions, the state is a must-try for the best tour packages in the country. Your trip packages should include visits to several historical monuments<br>
+      <p class="best-time">Best Time to Visit: November to February<br><br>
+        Best Places to Visit:</p>
+      <ul class="p-list p-end">
+        <li>Jaipur</li>
+        <li>Udaipur</li>
+        <li>Chittor</li>
+        <li>Jodhpur</li>
+        <li>Jaisalmer</li>
+        <li>Mount Abu</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</div>
+<span class="d-block d-footer p-5">
+  <div class="end">JetSet-Journey</div>
+</span>
+<span class="d-block d-footer p-4"></span>
+
+
+  
+    
+
+<script src="script.js"></script>
+<!-- <script src="https://unpkg.com/scrollreveal"></script> -->
+ <script src="packages.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+</body>
+</html>

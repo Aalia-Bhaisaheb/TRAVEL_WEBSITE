@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JetSet-Journey</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-white shadow pb-0" id="nav-placeholder">
+  <div class="container-fluid">
+    <a class="navbar-brand px-5 ms-5" href="#">
+      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-3 column navbar-nav hcenter" id="flightsLink" aria-current="page" href="index.html">
+            <span class="wrapper">
+              <i class="fas fa-home header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">Home</span></a>
+        </li>
+        </div>
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-3 column navbar-nav hcenter" id="packagesLink" aria-current="page" href="packages.html"  rel="no-referrer" rel="noopener">
+            <span class="wrapper">
+              <i class="fas fa-suitcase-rolling header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">Packages</span></a>
+        </li>
+        </div>
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-3 column navbar-nav hcenter" id="trainsLink" aria-current="page" href="about.html">
+            <span class="wrapper">
+              <i class="fas fa-users header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">About Us</span></a>
+        </li>
+        </div>
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-3 column navbar-nav hcenter" id="busesLink" aria-current="page" href="contact.html">
+            <span class="wrapper bus">
+              <i class="fas fa-phone header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">Contact Us</span></a>
+        </li>
+        </div>
+      </ul>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary shadow-none login-button me-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login or Create Account</button>
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-0">
+        <div class="container g-0">
+          <div class="row px-0 g-0">
+            <div class="d-none d-md-inline col-md-5 ps-3 py-2 pr-0">
+              <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item drk active">
+                    <img src="./images/static/login-modal/slider1.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                      <h3>Find your</h3>
+                      <h3>Serenity</h3>
+                      <h3>Book Now!!</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item drk">
+                    <img src="./images/static/login-modal/slider2.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                        <h3>Book Now</h3>
+                        <h3>to Dive into</h3>
+                        <h3>the THRILL!!</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item drk">
+                    <img src="./images/static/login-modal/slider3.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                        <h3>Secure</h3>
+                        <h3>your Spot</h3>
+                        <h3>Now!!</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item drk">
+                    <img src="./images/static/login-modal/slider4.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                        <h3>Don't Miss Out</h3>
+                        <h3>Grab Your</h3>
+                        <h3>Offers Today</h3>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12 shadow-lg px-4 pt-5 pb-2">
+              <div id="signInForm" class="d-block">
+              <p class="fs-2 text-center">Sign In</p>
+              <div class="contain pt-4">
+                <form>
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4 pt-3">
+                  <label class="form-label" for="form2Example1_signin">Email address</label>
+                  <input type="email" id="form2Example1_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Email-Address">
+                  </div>
+                  </div>
+                
+                  <!-- Password input -->
+                  <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                  <label class="form-label" for="form2Example2_signin">Password</label>
+                  <input type="password" id="form2Example2_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Password"/>
+                  </div>
+                
+                  <!-- 2 column grid layout for inline styling -->
+                  <div class="row mb-4">
+                    <!-- <div class="col px-3 g-0">
+                      <div class="form-check">
+                        <input class="form-check-input shadow-none" type="checkbox" value="" id="form2Example31" checked style="cursor: pointer;"/>
+                        <label class="form-check-label" for="form2Example31" style="cursor: pointer;"> Remember me </label>
+                      </div>
+                    </div> -->
+                    <div class="col-sm-12 forgot g-0 text-end">
+                      <!-- Simple link -->
+                      <!-- <a href="#!" id="showSignUp">Forgot password?</a> -->
+                      <a href="#" data-bs-toggle="modal" data-bs-target="#forgotPasswordModal">Forgot password?</a>
+                    </div>
+                  </div>
+                  <div class="sign col pt-3">
+                     <!-- Submit button -->
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary shadow-none" type="submit">Sign In</button>
+                  </div>
+                  </div>
+                  <!-- Register buttons -->
+                  <div class="text-center pt-4" id="txtContainer_signin">
+                    <a href="#" id="showSignUpLink" data-toggle="modal" data-target="#exampleModal2">Register</a>
+                  </div>                
+                </form>
+                <div class="pr text-center">
+                By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html" class="privacy"rel="no-referrer" rel="noopener">Privacy Policy</a>,<a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
+                </div>
+              </div>
+              <div id="signUpForm" class="form-container d-none">
+                <p class="fs-2 text-center">Sign Up</p>
+                <form>
+                  <!-- Sign Up Form Fields -->
+                  <div data-mdb-input-init class="form-outline mb-4 pt-3">
+                    <label class="form-label" for="form2Example1_signup">Email address</label>
+                    <input type="email" id="form2Example1_signup" class="form-control shadow-none border-secondary" placeholder="Enter Email-Address">
+                  </div>
+                  <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                    <label class="form-label" for="form2Example2_signup">Password</label>
+                    <input type="password" id="form2Example2_signup" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                    <small id="passwordHelp" class="form-text d-none">Password should contain at least 8 characters and one special character.</small>
+                  </div>
+                  <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                    <label class="form-label" for="form2Example2_confirm">Confirm Password</label>
+                    <input type="password" id="form2Example2_confirm" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                  </div>
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary shadow-none" type="submit">Sign Up</button>
+                  </div>
+                  <div class="text-center pt-4">
+                    <a href="#" id="showSignInLink">Already have an account? Sign In</a>
+                  </div>
+                  <div class="pr text-center">
+                    By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html" class="privacy">Privacy Policy</a>, <a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<!---->
+<!-- Forgot Password Modal -->
+<div class="modal fade" id="forgotPasswordModal" tabindex="-1" aria-labelledby="forgotPasswordLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+      <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-0">
+        <div class="container g-0">
+          <div class="row px-0 g-0">
+            <div class="col-md-12 shadow-lg px-4 pt-5 pb-2">
+              <p class="fs-2 text-center">Forgot Password</p>
+              <div class="contain pt-4">
+                <form id="forgotPasswordForm">
+                  <!-- Email input -->
+                  <div class="form-outline mb-4 pt-3">
+                    <label class="form-label" for="forgotEmail">Email address</label>
+                    <input type="email" id="forgotEmail" class="form-control shadow-none border-secondary" placeholder="Enter Email Address" required>
+                  </div>
+                  
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary shadow-none" type="submit">Send Password Reset Link</button>
+                  </div>
+                </form>
+                <div class="text-center pt-4">
+                  <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal1">Back to Sign In</a>
+                </div>
+                <div class="pr text-center">
+                  By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html" class="privacy">Privacy Policy</a>, <a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--HOME PAGE-->
+<div id="carouselExampleCaptionsHome" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptionsHome" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptionsHome" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptionsHome" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptionsHome" data-bs-slide-to="3" aria-label="Slide 4"></button>        
+
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item home-slider active" style="background-image: url('./images/static/home/ladakh_slider1.jpg');">
+      <div class="carousel-caption d-none d-md-block">
+        <div class="home-carousel-info">
+          <h5 class="carousel-home-heading1">HILL STATIONS</h5>
+        <p class="carousel-home-head-des">Hill stations are charming retreats nestled in the hills and mountains, often offering a cool escape from the heat and bustle of city life.</p>
+        </div>
+      </div>
+    </div>
+    <div class="carousel-item home-slider" style="background-image: url('./images/static/home/jaipur_slider2.jpg');">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carousel-home-heading1">HERITAGE SITES</h5>
+        <p class="carousel-home-head-des">Experience the grandeur of history and culture where timeless architecture and rich traditions come alive in a breathtaking setting."</p>
+      </div>
+    </div>
+    <div class="carousel-item home-slider" style="background-image: url('./images/static/home/beaches_slider3.jpg');">
+      <div class="carousel-caption d-none d-md-block">
+        <h5 class="carousel-home-heading1">BEACH HOLIDAYS</h5>
+        <p class="carousel-home-head-des">Relax on the sun-kissed shore where crystal-clear waters and gentle waves create the perfect backdrop for a rejuvenating escape.<p>
+      </div>
+    </div>
+    <div class="carousel-item home-slider" style="background-image: url('./images/static/home/forest_slider4.jpg');">
+        <div class="carousel-caption d-none d-md-block">
+          <h5 class="carousel-home-heading1">NATURE RETREATS</h5>
+          <p class="carousel-home-head-des">Immerse yourself in the serene beauty of where lush green canopies and tranquil trails offer a peaceful retreat into nature’s embrace.<p>
+        </div>
+      </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptionsHome" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptionsHome" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="main-home">
+  <div class="main-info">
+    <div class="card card-home-lets-explore shadow-lg">
+      <div class="card-body home-card1-lets-explore">
+          <div class="home-lets-explore">
+            <div class="home-quote">
+              JetSet-Journey is home, where your journey begins
+            </div>
+            <div class="lets-explore-line">LET'S EXPLORE</div>
+          </div>
+          <div class="home_descript">
+            We are providing our services for Himachal, Kashmir, Kerala, Delhi, Uttrakhand, Rajasthan, Goa, Andaman & Nicobar Island, Lakshwadeep, Darjeeling, Southern India, and Seven Sisters (North East India) Leh Ladakh etc. Send Your Queries
+          </div>
+      </div>
+    </div>
+    <div class="home-popular-tours">
+      <div class="heading-popular-tours">
+        POPULAR TOURS IN INDIA
+      </div>
+      <div class="type-tours">India’s Greatest Hits Tour</div>
+      <p class="type-tours-des">We feel proud in organizing personalised tours that provide a raw authentic experience of exploring India and in sharing the happiness with our fellow travellers</p>
+
+      <div class="container-tour">
+        <div class="slide-tour">
+            <div class="item-tour"
+            style="background-image: url('./images/static/home/popular-tours-kashmir-slider1.jpg');">
+                <div class="content">
+                    <div class="name">Kashmir</div>
+                    <div class="des">Discover the enchanting beauty of Kashmir, where breathtaking landscapes and serene tranquility await you</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item-tour"
+            style="background-image: url('./images/static/home/popular-tours-goa-slider2.jpg');">
+                <div class="content">
+                    <div class="name">Goa</div>
+                    <div class="des">Experience the vibrant charm of Goa, where sun-kissed beaches, lively culture, and unforgettable sunsets beckon you</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item-tour"
+            style="background-image: url('./images/static/home/popular-tours-ladakh-slider3.jpg');">
+                <div class="content">
+                    <div class="name">Ladakh</div>
+                    <div class="des">Embark on an adventure to Ladakh, where rugged landscapes and serene high-altitude beauty offer an unforgettable journey</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item-tour"
+            style="background-image: url('./images/static/home/popular-tours-kerela-slider4.jpg');">
+                <div class="content">
+                    <div class="name">Kerela</div>
+                    <div class="des">Immerse yourself in Kerala's enchanting backwaters and lush landscapes, where tranquility and natural beauty create a paradise on Earth.</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item-tour"
+            style="background-image: url('./images/static/home/popular-tours-rajasthan-slider5.jpg');">
+                <div class="content">
+                    <div class="name">Rajasthan</div>
+                    <div class="des">Step into the regal splendor of Rajasthan, where majestic forts, vibrant culture, and timeless deserts weave a captivating story of grandeur</div>
+                    <button>See More</button>
+                </div>
+            </div>
+            <div class="item-tour"
+            style="background-image: url('./images/static/home/popular-tours-andaman-slider6.jpg');">
+                <div class="content">
+                    <div class="name">Andaman</div>
+                    <div class="des">Discover the pristine paradise of the Andaman Islands, where crystal-clear waters, white sandy beaches, and lush tropical beauty await your escape</div>
+                    <button>See More</button>
+                </div>
+            </div>
+        </div>
+        <div class="button-tour-slider">
+            <button class="prev slider-prev"><i
+                    class="fas fa-arrow-left"style color="grey"></i></button>
+            <button class="next slider-next"><i
+                    class="fas fa-arrow-right"style color="grey"></i></button>
+        </div>
+    </div>
+    </div>
+    <div class="home-popular-tours home-popular-tours-duplicate">
+      <div class="heading-popular-tours">
+        POPULAR TOURS IN INDIA
+      </div>
+      <div class="type-tours">Echoes of the Past: Culture Tour</div>
+      <p class="type-tours-des">We feel proud in organizing personalized tours that provide a raw authentic experience of exploring India and in sharing the happiness with our fellow travellers</p>
+
+      <div class="container-tour duplicate">
+        <div class="slide-tour" id="slide-tour-2">
+          <div class="item-tour" id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-hawamahal-slider.jpg');">
+            <div class="content">
+              <div class="name">Rajasthan Heritage Tour</div>
+              <div class="des">Discover the Rajasthan Heritage Tour and immerse yourself in the regal splendor of Jaipur's City Palace, Udaipur's Lake Palace, Jodhpur's Mehrangarh Fort, and Jaisalmer's majestic fortifications.</div>
+              <button>See More</button>
+            </div>
+          </div>
+          <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-tajmahal-slider1.jpg');">
+            <div class="content">
+              <div class="name">Golden Triangle Tour</div>
+              <div class="des">Explore the Golden Triangle Tour and experience India's iconic landmarks, from the majestic Taj Mahal and Red Fort to the grandeur of Amber Fort and the elegance of Hawa Mahal.</div>
+              <button>See More</button>
+            </div>
+          </div>
+          <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-qutubminar-slider3.jpg');">
+            <div class="content">
+              <div class="name">Delhi and Agra Heritage Tour</div>
+              <div class="des">Explore the Delhi and Agra Heritage Tour, showcasing the majestic Red Fort and Qutub Minar, along with the iconic Taj Mahal and Agra Fort</div>
+              <button>See More</button>
+            </div>
+          </div>
+          <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-victoria-slider2.jpg');">
+            <div class="content">
+              <div class="name">Eastern India Heritage Tour</div>
+              <div class="des">Experienc Eastern India Heritage Tour, featuring the Victoria Memorial and Howrah Bridge, the Darjeeling Himalayan Railway, and the monasteries of Sikkim.</div>
+              <button>See More</button>
+            </div>
+          </div>
+          <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-goldentemple-slider4.jpg');">
+            <div class="content">
+              <div class="name">Punjab Heritage Tour</div>
+              <div class="des">Immerse yourself in the Punjab Heritage Tour, featuring the sacred Golden Temple, the historic Patiala Fort, and the Maharaja Ranjit Singh Museum.</div>
+              <button>See More</button>
+            </div>
+          </div>
+          <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-church-slider5.png');">
+            <div class="content">
+              <div class="name">Portuguese Heritage Tour</div>
+              <div class="des">Discover the Goa Portuguese Heritage Tour, where you'll explore the Basilica of Bom Jesus, Se Cathedral, and the charming Fontainhas district in Old Goa and Panaji.</div>
+              <button>See More</button>
+            </div>
+          </div>
+        </div>
+        <div class="button-tour-slider">
+          <button class="prev slider2-prev"><i class="fas fa-arrow-left" style="color: grey;"></i></button>
+          <button class="next slider2-next"><i class="fas fa-arrow-right" style="color: grey;"></i></button>
+        </div>
+      </div>
+
+      <div class="home-popular-tours home-popular-tours-duplicate2">
+        <div class="heading-popular-tours">
+          POPULAR TOURS IN INDIA
+        </div>
+        <div class="type-tours">Trail Trekker's Adventure</div>
+        <p class="type-tours-des">We feel proud in organizing personalized tours that provide a raw authentic experience of exploring India and in sharing the happiness with our fellow travellers</p>
+  
+        <div class="container-tour duplicate2">
+          <div class="slide-tour" id="slide-tour-3">
+            <div class="item-tour" id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-balipass-slider.png');">
+              <div class="content">
+                <div class="name">Bali Pass</div>
+                <div class="des">Balipass, in Himachal Pradesh, offers a thrilling trek with breathtaking views of the Kinnaur and Spiti valleys and a chance to explore untouched wilderness.</div>
+                <button>See More</button>
+              </div>
+            </div>
+            <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-manali.png');">
+              <div class="content">
+                <div class="name">Manali</div>
+                <div class="des">Manali, nestled in Himachal Pradesh, is a vibrant destination offering stunning landscapes, thrilling adventure sports, and a gateway to serene mountain treks and scenic beauty</div>
+                <button>See More</button>
+              </div>
+            </div>
+            <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-hampta.png');">
+              <div class="content">
+                <div class="name">Hampta</div>
+                <div class="des">The Hampta Pass trek in Himachal Pradesh offers a stunning journey through diverse landscapes, from lush valleys to rugged high-altitude terrain with breathtaking mountain views.</div>
+                <button>See More</button>
+              </div>
+            </div>
+            <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-bodhpathri.png');">
+              <div class="content">
+                <div class="name">Bodhpathri</div>
+                <div class="des">Bodhpathri, in Jammu and Kashmir, offers a serene trek through lush meadows and dense forests, leading to picturesque views of the Himalayas and tranquil landscapes.</div>
+                <button>See More</button>
+              </div>
+            </div>
+            <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-goechala.png');">
+              <div class="content">
+                <div class="name">Goechala</div>
+                <div class="des">Goechala, in Sikkim, provides an exhilarating trek with stunning views of Kanchenjunga, lush rhododendron forests, and dramatic high-altitude landscapes.</div>
+                <button>See More</button>
+              </div>
+            </div>
+            <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-sandakphu.png');">
+              <div class="content">
+                <div class="name">Sandakphu</div>
+                <div class="des">Sandakphu, in West Bengal, delivers breathtaking panoramic views of Everest and Kanchenjunga, set against a backdrop of lush meadows and enchanting forests.</div>
+                <button>See More</button>
+              </div>
+            </div>
+          </div>
+          <div class="button-tour-slider">
+            <button class="prev slider3-prev"><i class="fas fa-arrow-left" style="color: grey;"></i></button>
+            <button class="next slider3-next"><i class="fas fa-arrow-right" style="color: grey;"></i></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="footer-home">
+  <span class="d-block p-5 text-white footer-content footer-name"><i class="far fa-copyright copyright-symbol" style="color: #d3d3d4;"></i>JetSet-Journey</span>
+  <span class="d-block p-2 text-white footer-content footer-name"></span>
+</div>
+
+
+    <!--popular tours-->
+    
+
+
+<script src="script.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+  const forgotPasswordForm = document.getElementById('forgotPasswordForm');
+
+  forgotPasswordForm.addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent the default form submission
+
+    const email = document.getElementById('forgotEmail').value;
+
+    if (email) {
+      // Implement the logic for sending the password reset link.
+      // This might involve sending the email to your server or API endpoint.
+
+      // For now, just log the email to the console
+      console.log('Password reset link sent to:', email);
+
+      // Show a success message or redirect to another page
+      alert('A password reset link has been sent to your email address.');
+
+      // Close the modal after submission
+      const modal = bootstrap.Modal.getInstance(document.getElementById('forgotPasswordModal'));
+      modal.hide();
+    } else {
+      alert('Please enter a valid email address.');
+    }
+  });
+});
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+</body>
+</html>

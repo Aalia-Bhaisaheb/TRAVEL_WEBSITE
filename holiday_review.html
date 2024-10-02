@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Holiday Review</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="review.css">
+  <link rel="stylesheet" href="guests.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+<body>
+  <nav class="navbar fixed-top review">
+    <div class="container-fluid review-nav">
+      <div class="navbar-brand review-p">Review Package</div>
+    </div>
+  </nav>
+  <span class="d-block review-block"></span>
+  <div class="main-review">
+    <div class="card main-card-review">
+      <div class="card-body main-review-body">
+        <div class="package-name">
+          <p class="package-name" id="packg-name"></p>
+        </div>
+        <div class="guest">
+          <div class="detail-1">
+             Travellers
+            <!--selected displayed here-->
+          <div id="selected-guests">
+            <!--selected displayed here-->
+          </div>
+          </div>
+          <!-- Button trigger modal -->
+          <button type="button guest-button" style="background-color: rgb(237, 239, 241); margin-top: 1.5rem;" class="btn shadow-none" data-bs-toggle="modal"data-bs-target="#exampleModal-guest">
+          Select the number of travellers
+          </button>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal-guest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-sm guests-modal">
+              <div class="modal-content guest-content">
+                <div class="modal-header guest-header"></div>
+                  <div class="modal-body guest-body">
+                    <!-- Modal content goes here -->
+                    <div id="room-details">
+                    <!-- Previous room details will be added here -->
+                    </div>
+                    <hr class="border-bottom border-1 border-seperation">
+                    <span class="d-block d-block-guest p-1"><div class="heading">Maximum 4 guests are allowed in one room</div></span>
+                    <div class="main">
+                      <div class="room-count" id="room-label">ROOM 1</div>
+                        <div class="info-container">
+                          <div class="adult-info">
+                            <div class="adult-count">
+                              Adults<span class="guest-term">-Above 12 years</span>
+                            </div>
+                            <div class="add-count shadow-sm">
+                              <div class="inner">
+                                <div><i class="fas fa-minus sign" id="decrease-adult"></i></div>
+                                <div class="count" id="count-adult">1</div>
+                                <div><i class="fas fa-plus sign" id="increase-adult"></i></div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="child-info">
+                            <div class="child-count">
+                            Children<span class="guest-term">-Below 12 years</span>
+                            </div>
+                            <div class="add-count shadow-sm">
+                            <div class="inner">
+                              <div><i class="fas fa-minus sign" id="decrease-child"></i></div>
+                              <div class="count" id="count-child">0</div>
+                              <div><i class="fas fa-plus sign" id="increase-child"></i></div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <hr class="border-bottom border-1 border-seperation">
+                      <div class="another-room">
+                        <div class="add-room shadow-sm" id="add-room-button">
+                        + ADD ANOTHER ROOM
+                        </div>
+                        <button class="btn btn-primary search-bar" id="apply-details" type="submit">Apply</button>
+                      </div>
+                    </div>
+                  </div>      
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="traveller-contact">
+            <div class="detail-1">
+              Enter Contact Details
+            </div>
+            <div class="contact">
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label email-input">Email address</label>
+                <input type="email" class="form-control email-input-box shadow-none" id="exampleInputEmail1">
+                <small id="emailError" class="text-danger" style="display: none;">Please enter a valid email address.</small>
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputNumber" class="form-label number-input">Mobile Number</label>
+              <input type="text" class="form-control number-input-box shadow-none" id="exampleInputNumber" >
+              <small id="noError" class="text-danger text-number" style="display: none;">Please enter a valid number.</small>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="itinerary">
+      <div class="dropdown">
+        <button class="btn shadow-none itinerary-button" type="button" id="dropdownMenuItinerary" data-bs-toggle="dropdown" aria-expanded="false">
+          Itinerary
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="dropdownMenuItinerary">
+          <li class="itinerary-day">
+            <div class="itenary-d d1">Destinations</div>
+            <ul class="i-dest">
+              <li class="place-itinerary">Arrival at the main city</li>
+              <li class="place-itinerary">Explore the local city</li>
+              <li class="place-itinerary">Explore nearby attractions</li>
+            </ul>
+            <div class="itenary-d d1">Activities</div>
+            <ul class="i-dest">
+              <li class="place-itinerary">Check-in and relax</li>
+            <li class="place-itinerary">Visit iconic sites</li>
+              <li class="place-itinerary">Gift Hamper On Arrival</li>
+              <li class="place-itinerary">Scenic drive to the next destination</li>
+              <li class="place-itinerary">Free time for personal exploration</li>
+              <li class="place-itinerary">Scenic viewpoints and photo opportunities</li>
+              <li class="place-itinerary">Evening cultural show or local shopping experience</li>
+            </ul>
+            <p class="place-itinerary-more">and many more...</p>
+            <div class="itenary-d d1">Accomodation</div>
+            <ul class="i-dest">
+              <li class="place-itinerary">3 Stars 4 Stars and 5 Stars Hotels</li>
+            </ul>
+            <div class="itenary-d d1">Transportation</div>
+            <ul class="i-dest">
+              <li class="place-itinerary">Arrange for private transportation for convenience</li>
+            </ul>
+            <div class="itenary-d d1">Meals</div>
+            <ul class="i-dest">
+              <li class="place-itinerary">Breakfast is usually included, while lunches and dinners can be a mix of local restaurants and hotel dining.</li>
+            </ul>
+            <div class="itenary-d d1">FLexibility</div>
+            <ul class="i-dest">
+              <li class="place-itinerary"> The itinerary can be adjusted based on specific interests, such as cultural experiences, adventure activities, or relaxation.</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="payment-block">
+      <div class="card payment-card">
+        <div class="card-body payment-card-body">
+          <p class="payment-heading">
+            Proceed to Payment
+            <div id="price-display"></div>
+            <div id="total-price-display"></div> <!-- Displays the total price -->
+          </p>
+          <div class="d-grid gap-2">
+            <button class="btn payment-b shadow-none" type="button">PAY</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="footer-main">
+      <span class="d-block bg-dark text-white footer-name"><i class="far fa-copyright copyright-symbol" style="color: #d3d3d4;"></i>2024 JetSet-Journey</span>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="holiday_reiview.js"></script>
+  <script>
+    function getParameterByName(name) {
+        const url = window.location.href;
+        name = name.replace(/[\[\]]/g, '\\$&');
+        const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)');
+        const results = regex.exec(url);
+        if (!results) return null;
+        if (!results[2]) return '';
+        return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    
+   document.addEventListener('DOMContentLoaded', () => {
+    const packageName = getParameterByName('package'); // Get package name from URL
+    const packageNameDisplay = document.getElementById('packg-name');
+    const date = getParameterByName('date');
+    const selectedDateDisplay = document.getElementById('selected-date-display');
+    
+    packageNameDisplay.textContent = packageName || "Package not found"; // Display package name
+    selectedDateDisplay.textContent = date ? `Selected Date: ${date}` : "Date not selected"; // Display selected date
+});
+    </script>
+    
+</body>
+</html>

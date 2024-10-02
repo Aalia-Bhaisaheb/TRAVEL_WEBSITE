@@ -1,0 +1,224 @@
+.body{
+  font-family: Arial, sans-serif;
+}
+.guests-modal {
+  position: absolute;
+  top: 5px; /* Adjust this value as needed */
+  /* left: 100px; Adjust this value as needed */
+}
+/* Additional styling to make sure the modal stays on screen */
+@media (max-width: 768px) {
+  .guests-modal {
+    top: 5px;
+    /* left: 10px; */
+  }
+}
+.search-bar{
+  width: 10rem;
+}
+.guest-content{
+  width: 24rem;
+  border-radius: 0.5rem;
+}
+.d-block-guest{
+  background-color: #facfbf;
+  color: #db734c;
+  width: 100%;
+  height: 2.3rem;
+}
+.guest-body{
+  padding: 0;
+  height: auto;
+  overflow-y: auto;
+}
+/* Container for the entire layout */
+.main {
+margin: 1rem;
+}
+.guest-header{
+border: none;
+}
+/* Styling for the room label */
+.room-count {
+font-size: 0.9rem;
+font-weight: 500;
+color: rgb(96, 96, 96);
+margin-bottom: 1rem; /* Space below room count */
+}
+.info-container {
+display: flex;
+justify-content: space-between; /* Distributes space between items */
+align-items: flex-start; /* Aligns items at the top */
+gap: 1rem; /* Space between adult and child sections */
+}
+.adult-info, .child-info {
+display: flex;
+flex-direction: column; /* Stack label and counter vertically */
+align-items: center; /* Center items horizontally within each section */
+}
+.adult-count, .child-count {
+font-size: 0.9rem;
+font-weight: 500;
+margin: 0;
+margin-bottom: 0.5rem; /* Space between label and counter */
+}
+.guest-term {
+font-size: 0.8rem;
+font-weight: 400;
+}
+.add-count {
+border: 0.05rem solid rgb(220, 217, 217);
+padding: 0.5rem;
+width: 9rem; 
+border-radius: 0.2rem;
+display: flex;
+justify-content: center; 
+align-items: center; 
+height: 3rem; 
+}
+.add-room {
+border: 0.05rem solid rgb(34, 83, 215);
+color:rgb(34, 83, 215);
+font-weight:900;
+padding: 0.1rem;
+width: 28rem; 
+border-radius: 0.2rem;
+display: flex;
+justify-content: center; 
+align-items: center; 
+height: 3rem; 
+}
+.search-bar {
+border: 0.05rem solid;
+color:whitesmoke;
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(14,209,241,1) 0%, rgba(94,114,240,1) 100%);
+font-weight:900;
+padding: 0.7rem;
+width: 5rem; 
+border-radius: 0.2rem;
+height: 3rem; 
+margin-left: 3rem;
+}
+.btn:hover{
+text-decoration: none;
+color: whitesmoke;
+border: none;
+}
+.btn:active{
+color: whitesmoke;
+}
+.another-room{
+display: flex;
+justify-content:start;
+margin: 1rem;
+align-items: center;
+text-align: center;
+}
+
+.inner {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+}
+
+.sign {
+color: rgb(175, 173, 173); 
+font-weight: 600;
+transform: scale(0.8); 
+cursor: pointer; 
+}
+.count {
+font-size: 1.2rem;
+letter-spacing: 0.1rem; /* Space between digits */
+}
+.counter {
+display: flex;
+justify-content: space-between;
+}
+.border-seperation{
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+.room-detail { 
+margin-bottom: 10px;
+color: rgb(91, 90, 90);
+font-size: 0.9rem;
+}
+.heading {
+font-size: 0.9rem;
+font-weight: 500;
+color: #db734c;
+margin-bottom: 1rem; 
+display: flex;
+justify-content: center;
+}
+@media (max-width: 768px) {
+.guest-content {
+    width: 100%;
+    border-radius: 0.3rem;
+}
+
+.btn {
+    width: 8rem;
+}
+
+.add-room {
+    width: 9rem;
+}
+
+.search-bar {
+    width: 4rem;
+}
+
+.room-count {
+    font-size: 0.8rem;
+}
+
+.info-container {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.add-count {
+    width: 8rem;
+    height: 2.5rem;
+}
+}
+
+/* For mobile screens */
+@media (max-width: 576px) {
+.guest-content {
+    width: 100%;
+    border-radius: 0.2rem;
+}
+.add-room{
+  font-size: 0.765rem;
+}
+.btn {
+    width: 6rem;
+}
+
+.add-room {
+    width: 8rem;
+}
+
+.search-bar {
+    width: 3rem;
+    font-size: 0.6rem;
+}
+
+.room-count {
+    font-size: 0.7rem;
+}
+
+.info-container {
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.add-count {
+    width: 7rem;
+    height: 2rem;
+}
+}

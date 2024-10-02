@@ -1,0 +1,48 @@
+.body{
+  font-family: Arial, sans-serif;
+}
+
+.main{
+  margin-left: 10rem;
+  margin-right: 10rem;
+  margin-top: 2rem;
+}
+.card-heading{
+  font-size: 1.75rem;
+  color: rgb(147, 10, 10);
+  margin-bottom: 1.5rem;
+}
+.intro{
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.intro-body{
+  font-size: 1.3rem;
+  font-weight: 400;
+}
+.card{
+  margin-bottom: 1.5rem;
+}
+@media (max-width: 768px) {
+  .intro {
+    font-size: 1.25rem; /* Smaller font size for smaller screens */
+  }
+
+  .intro-body {
+    font-size: 1.1rem; /* Smaller font size for smaller screens */
+  }
+
+  .main {
+    margin: 1rem; /* Reduce margins on smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .intro {
+    font-size: 1.1rem; /* Further reduce font size for extra small screens */
+  }
+
+  .intro-body {
+    font-size: 1rem; /* Further reduce font size for extra small screens */
+  }
+}

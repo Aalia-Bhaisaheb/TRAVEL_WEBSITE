@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bootstrap Modal Example</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="guests.css">
+</head>
+<body>
+
+<!-- Button trigger modal -->
+<input type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal-guest">
+ 
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal-guest" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-sm guests-modal">
+    <div class="modal-content guest-content">
+      <div class="modal-header guest-header"></div>
+      <div class="modal-body guest-body">
+        <!-- Modal content goes here -->
+        <div id="room-details">
+          <!-- Previous room details will be added here -->
+        </div>
+        <hr class="border-bottom border-1 border-seperation">
+        <span class="d-block d-block-guest p-1"><div class="heading">Maximum 4 guests are allowed in one room</div></span>
+        <div class="main">
+          <div class="room-count" id="room-label">ROOM 1</div>
+          <div class="info-container">
+              <div class="adult-info">
+                  <div class="adult-count">
+                      Adults<span class="guest-term">-Above 12 years</span>
+                  </div>
+                  <div class="add-count shadow-sm">
+                      <div class="inner">
+                          <div><i class="fas fa-minus sign" id="decrease-adult"></i></div>
+                          <div class="count" id="count-adult">1</div>
+                          <div><i class="fas fa-plus sign" id="increase-adult"></i></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="child-info">
+                  <div class="child-count">
+                      Children<span class="guest-term">-Below 12 years</span>
+                  </div>
+                  <div class="add-count shadow-sm">
+                      <div class="inner">
+                          <div><i class="fas fa-minus sign" id="decrease-child"></i></div>
+                          <div class="count" id="count-child">0</div>
+                          <div><i class="fas fa-plus sign" id="increase-child"></i></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <hr class="border-bottom border-1 border-seperation">
+          <div class="another-room">
+            <div class="add-room shadow-sm" id="add-room-button">
+              + ADD ANOTHER ROOM
+            </div>
+            <button class="btn btn-primary search-bar" type="submit">Apply</button>
+            </div>
+          </div>
+      </div>      
+      </div>
+    </div>
+  </div>
+</div>
+<script src="guests.js"></script>
+<!-- Bootstrap JS (Include after jQuery) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Optional: Add custom JavaScript here -->
+<script>
+    </script>  
+</body>
+</html>

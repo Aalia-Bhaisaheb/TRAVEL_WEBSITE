@@ -1,0 +1,161 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  height: auto;
+}
+.review{
+  padding-top: 0;
+}
+.review-nav{
+  background-color:  rgb(6, 33, 66);
+  color: rgb(184, 181, 181);
+  padding: 0.8rem;
+}
+.review-block{
+  padding: 5rem;
+  background-color: rgb(6, 33, 66);
+  padding-left: 2rem;
+}
+.review-p{
+    margin-left: 5rem;
+    font-size: 1.4rem;
+    font-weight: 600
+}
+.main-card-review{
+  margin-top: -5.5rem;
+  width: 84.5rem;
+}
+.main-review {
+  display: flex;
+  justify-content: center;
+}
+.package-name{
+  font-size:2rem ;
+  font-weight: 600;
+  color: rgb(57, 57, 57);
+}
+.detail-1{
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: rgb(72, 72, 72);
+}
+.guest-button{
+  color: grey;
+}
+/* Style for the selected guests section */
+#selected-guests {
+  margin-top: 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+}
+/* Room details */
+.room-detail {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+/* Total guests */
+.total-guests {
+  font-size: 1.2rem; /* Total guests font size */
+  font-weight: 400;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #007bff; /* Bootstrap primary color */
+}
+.traveller-contact{
+  margin-top: 2rem;
+}
+.email-input{
+  margin-top: 0.5rem;
+  width: 100%;
+}
+.email-input-box{
+  width: 20rem;
+}
+.contact{
+  display: flex;
+}
+.number-input{
+  margin-top: 0.5rem;
+  width: 100%;
+  margin-left: 2rem;
+}
+.number-input-box{
+  width: 20rem;
+  margin-left: 2rem;
+}
+.text-number{
+  margin-left: 2rem;
+}
+.itinerary-button{
+  background-color: #F2F2F2;
+  color: grey;
+  width: 84.5rem;
+  text-align: start;
+  margin-left: 5.3rem;
+  margin-top: 0.5rem;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+.itinerary-day{
+  color: rgb(72, 72, 72);
+  width: 84.5rem;
+}
+.itenary-d {
+  font-size: 1.8em;
+  color: rgb(72, 72, 72);
+  font-weight: 600;
+  margin: 1rem;
+}
+.place-itinerary-more{
+  margin-left: 0.8rem;
+  color: grey;
+}
+.payment-card{
+  width: 84.5rem;
+  margin: 0.5rem;
+  margin-left: 5.4rem;
+}
+.payment-heading{
+  font-size: 1.8rem;
+  font-weight: 400;
+  color: #104d89;
+}
+#total-price-display{
+  margin-top: 0.5rem;
+}
+.payment-b{
+  background-color: #F2F2F2;
+  color: rgb(42, 41, 41);
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.payment-b:hover {
+  background-color: #173657;
+  border-color: #2d74b2; /*set the color you want here*/
+}
+.itinerary-button:hover{
+  color: #fff;
+  background-color: #173657;
+  border-color: #2d74b2; /*set the color you want here*/
+}
+.guest-button:hover{
+  color: #fff;
+  background-color: #173657;
+  border-color: #2d74b2; /*set the color you want here*/
+}
+.footer{
+  margin-top: 30rem;
+}
+.dropdown-menu.show {
+  display: block; /* Ensure it behaves correctly when open */
+}
+.footer-name{
+  text-align: end;
+  font-size: 1.2rem;
+  padding: 5rem;
+}
