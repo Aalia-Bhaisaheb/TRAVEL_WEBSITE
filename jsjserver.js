@@ -2,7 +2,7 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bcrypt = require('bcrypt'); // Used for password hashing and comparison
 const path = require('path');
-const port = 3000;
+const port = 4000;
 
 const app = express();
 
