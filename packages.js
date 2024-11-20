@@ -131,45 +131,61 @@ let places_m=[
   {
     m_id:1,
     m_img:"./images/static/packages/darjeeling.jpg",
-    m_name:"Darjeeling"
+    m_name:"Darjeeling",
+    link:"./Darjeeling.html"
   },
   {
     m_id:2,
     m_img:"./images/static/packages/matheran.png",
-    m_name:"Matheran"
+    m_name:"Matheran",
+    link:"./Matheran.html"
   },
   {
     m_id:3,
     m_img:"./images/static/packages/lonavla.png",
-    m_name:"Lonavala"
+    m_name:"Lonavala",
+    link:"./Lonavala.html"
   },
   {
     m_id:4,
     m_img:"./images/static/packages/saputara.png",
-    m_name:"Saputara"
+    m_name:"Saputara",
+    link:"./Saputara.html"
   },
   {
     m_id:5,
     m_img:"./images/static/packages/meghalaya.png",
-    m_name:"Meghalaya"
+    m_name:"Meghalaya",
+    link:"./Meghalaya.html"
   },
   {
     m_id:6,
     m_img:"./images/static/packages/coorg.png",
-    m_name:"Coorg"
+    m_name:"Coorg",
+    link:"./Coorg.html"
   }
 ]
-for(let i=0;i<places_m.length;i++){
-  const m_div=document.createElement("div");
-  m_div.style.width="16rem";
-  m_div.className="card dest1 mx-2 card2";
-  const m_label=document.createElement("div");
-  m_label.className="overlay-text";
-  m_label.innerHTML=places_m[i]["m_name"];
-  const m_img=document.createElement("img");
-  m_img.setAttribute('src',places_m[i]["m_img"]);
-  m_div.appendChild(m_img);
+for (let i = 0; i < places_m.length; i++) {
+  const m_div = document.createElement("div");
+  m_div.style.width = "16rem";
+  m_div.className = "card dest1 mx-2 card2";
+
+  const m_link = document.createElement("a");
+  m_link.setAttribute("href", places_m[i].link);
+  m_link.setAttribute("target", "_blank");
+
+  const m_img = document.createElement("img");
+  m_img.setAttribute('src', places_m[i].m_img);
+  m_img.className = "card-img-top dest1";
+
+  const m_label = document.createElement("div");
+  m_label.className = "overlay-text";
+  m_label.innerHTML = places_m[i].m_name;
+
+  m_link.appendChild(m_img);
+  m_div.appendChild(m_link);
   m_div.appendChild(m_label);
+
   document.getElementById("monsoon-carousel").appendChild(m_div);
 }
 
@@ -177,44 +193,63 @@ let places_t=[
   {
     t_id:1,
     t_img:"./images/static/packages/doodhpathri.png",
-    t_name:"Bodpathri"
+    t_name:"Bodpathri",
+    link: " ./Bodpathri.html"
   },
   {
     t_id:2,
     t_img:"./images/static/packages/tarsar_marsar.png",
-    t_name:"Bali Pass"
+    t_name:"Bali Pass",
+    link: " ./BaliPass.html"
   },
   {
     t_id:3,
     t_img:"./images/static/packages/sandakphu.png",
-    t_name:"Sandakphu"
+    t_name:"Sandakphu",
+    link:"./sandakphu.html"
   },
   {
     t_id:4,
     t_img:"./images/static/packages/goechala.png",
-    t_name:"Goechala"
+    t_name:"Goechala",
+    link:"./goechala.html"
   },
   {
     t_id:5,
     t_img:"./images/static/packages/kedarkantha.png",
-    t_name:"Kedarkantha"
+    t_name:"Kedarkantha",
+    link:"./kedarkantha.html"
   },
   {
     t_id:6,
     t_img:"./images/static/packages/hampta_pass.png",
-    t_name:"Hampta"
+    t_name:"Hampta",
+    link:"./hampta.html"
   }
 ]
-for(let i=0;i<places_t.length;i++){
-  const t_div=document.createElement("div");
-  t_div.style.width="16rem";
-  t_div.className="card dest1 mx-2 card2";
-  const t_label=document.createElement("div");
-  t_label.className="overlay-text";
-  t_label.innerHTML=places_t[i]["t_name"];
-  const t_img=document.createElement("img");
-  t_img.setAttribute('src',places_t[i]["t_img"]);
-  t_div.appendChild(t_img);
-  t_div.appendChild(t_label);
+for (let i = 0; i < places_t.length; i++) {
+  const t_div = document.createElement("div");
+  t_div.style.width = "16rem";
+  t_div.className = "card dest1 mx-2 card2";
+
+  const t_link = document.createElement("a");  // Create link element
+  t_link.setAttribute('href', places_t[i]["link"] || "#");  // Ensure there's a link
+  t_link.setAttribute('target','_blank');
+
+  const t_img = document.createElement("img");
+  t_img.setAttribute('src', places_t[i]["t_img"]);
+
+  const t_label = document.createElement("div");
+  t_label.className = "overlay-text";
+  t_label.innerHTML = places_t[i]["t_name"];
+
+  // Append the image and label inside the link
+  t_link.appendChild(t_img);
+  t_link.appendChild(t_label);
+
+  // Append the link to the card div
+  t_div.appendChild(t_link);
+
+  // Finally, append the card to the trekking carousel
   document.getElementById("trekking-carousel").appendChild(t_div);
 }
