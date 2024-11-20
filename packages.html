@@ -15,7 +15,7 @@
   <nav class="navbar navbar-expand-lg bg-white shadow pb-0" id="nav-placeholder">
     <div class="container-fluid">
       <a class="navbar-brand px-5 ms-5" href="#">
-        <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+        <img src="./images/static/JETSET5.png" alt="" width="150" height="140" class="d-inline-block align-text-top logo">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -72,7 +72,7 @@
           </div>
         </ul>
       <!-- Button trigger modal -->
-      <button type="button" class="btn btn-primary shadow-none login-button me-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login or Create Account</button>
+      <!-- <button type="button" class="btn btn-primary shadow-none login-button me-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login or Create Account</button> -->
       </div>
     </div>
   </nav>
@@ -144,22 +144,23 @@
                   </button>
                 </div>
               </div>
+              
               <div class="col-md-7 col-sm-12 shadow-lg px-4 pt-5 pb-2">
                 <div id="signInForm" class="d-block">
                 <p class="fs-2 text-center">Sign In</p>
                 <div class="contain pt-4">
-                  <form>
+                  <form method="POST" action="/login">
                     <!-- Email input -->
                     <div data-mdb-input-init class="form-outline mb-4 pt-3">
                     <label class="form-label" for="form2Example1_signin">Email address</label>
-                    <input type="email" id="form2Example1_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Email-Address">
+                    <input type="email" id="form2Example1_signin" name="form2Example1_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Email-Address">
                     </div>
                     </div>
                   
                     <!-- Password input -->
                     <div data-mdb-input-init class="form-outline mb-4 pt-2">
                     <label class="form-label" for="form2Example2_signin">Password</label>
-                    <input type="password" id="form2Example2_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Password"/>
+                    <input type="password" id="form2Example2_signin" name="form2Example2_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Password"/>
                     </div>
                   
                     <!-- 2 column grid layout for inline styling -->
@@ -178,7 +179,7 @@
                     <div class="sign col pt-3">
                        <!-- Submit button -->
                     <div class="d-grid gap-2">
-                      <button class="btn btn-primary shadow-none" type="button">Sign In</button>
+                      <button class="btn btn-primary shadow-none" type="submit">Sign In</button>
                     </div>
                     </div>
                     <!-- Register buttons -->
@@ -192,11 +193,11 @@
                 </div>
                 <div id="signUpForm" class="form-container d-none">
                   <p class="fs-2 text-center">Sign Up</p>
-                  <form>
+                  <form method="post" action="/signup">
                     <!-- Sign Up Form Fields -->
                     <div data-mdb-input-init class="form-outline mb-4 pt-3">
                       <label class="form-label" for="form2Example1_signup">Email address</label>
-                      <input type="email" id="form2Example1_signup" class="form-control shadow-none border-secondary" placeholder="Enter Email Address">
+                      <input type="email" id="form2Example1_signup" name="form2Example1_signup" class="form-control shadow-none border-secondary" placeholder="Enter Email Address">
                     </div>
                     <div data-mdb-input-init class="form-outline mb-4 pt-2">
                       <label class="form-label" for="form2Example2_signup">Password</label>
@@ -205,10 +206,10 @@
                     </div>
                     <div data-mdb-input-init class="form-outline mb-4 pt-2">
                       <label class="form-label" for="form2Example2_confirm">Confirm Password</label>
-                      <input type="password" id="form2Example2_confirm" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                      <input type="password" id="form2Example2_confirm"  name="form2Example2_confirm" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
                     </div>
                     <div class="d-grid gap-2">
-                      <button class="btn btn-primary shadow-none" type="button">Sign Up</button>
+                      <button class="btn btn-primary shadow-none" type="submit">Sign Up</button>
                     </div>
                     <div class="text-center pt-4">
                       <a href="#" id="showSignInLink">Already have an account? Sign In</a>
@@ -342,7 +343,7 @@
   <div class="card-footer">
     <div class="card-body-footer">
       <p class="question">How to book Holidays with JetSet-Journey?</p>
-      <p class="sol">The user-friendly JetSet-Journey website make it easy for enthusiastic travellers to plan and book a holiday simply at the click of a button. Just use the filters and select the city you want to visit along with your travel dates, travel duration, specific preferences, if any, on hotels, kind of holiday, etc. and MakeMyTrip offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs. Else, you could also choose hotels of your choice, add sightseeing and activities to your list and have a package ready that best suits your requirement. You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. With MakeMyTrip, planning and buying your ideal holiday has never been easier.</p>
+      <p class="sol">The user-friendly JetSet-Journey website make it easy for enthusiastic travellers to plan and book a holiday simply at the click of a button. Just use the filters and select the city you want to visit along with your travel dates, travel duration, specific preferences, if any, on hotels, kind of holiday, etc. and it offers you an extensive list of holiday packages to choose from. Pick any package that meets your needs. Else, you could also choose hotels of your choice, add sightseeing and activities to your list and have a package ready that best suits your requirement. You can choose to book your tour packages offline by dropping a query or chatting with our travel experts for immediate support. With MakeMyTrip, planning and buying your ideal holiday has never been easier.</p>
     </div>
   </div>
   <div class="card-footer">

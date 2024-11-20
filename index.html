@@ -13,7 +13,7 @@
 <nav class="navbar navbar-expand-lg bg-white shadow pb-0" id="nav-placeholder">
   <div class="container-fluid">
     <a class="navbar-brand px-5 ms-5" href="#">
-      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+      <img src="./images/static/JETSET5.png" alt="" width="150" height="140" class="d-inline-block align-text-top logo">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -281,6 +281,38 @@
     </div>
   </div>
 </div>
+<script>
+  document.getElementById("forgotPasswordForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      const email = document.getElementById("forgotEmail").value;
+
+      if (email) {
+          // Send a POST request to your backend to handle sending the password reset link
+          fetch('/forgot-password', {
+              method: 'POST',
+              headers: {
+                  'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({ email: email })
+          })
+          .then(response => response.json())
+          .then(data => {
+              alert(data.message); // You can also display a custom message or redirect
+              if (data.success) {
+                  // Close modal or show confirmation
+                  $('#forgotPasswordModal').modal('hide');
+              }
+          })
+          .catch(error => {
+              alert("Error: " + error.message);
+          });
+      } else {
+          alert("Please enter a valid email address.");
+      }
+  });
+</script>
+
 
 <!--HOME PAGE-->
 <div id="carouselExampleCaptionsHome" class="carousel slide" data-bs-ride="carousel">
@@ -357,7 +389,7 @@
                 <div class="content">
                     <div class="name">Kashmir</div>
                     <div class="des">Discover the enchanting beauty of Kashmir, where breathtaking landscapes and serene tranquility await you</div>
-                    <button>See More</button>
+                    <!-- <button>See More</button> -->
                 </div>
             </div>
             <div class="item-tour"
@@ -365,7 +397,7 @@
                 <div class="content">
                     <div class="name">Goa</div>
                     <div class="des">Experience the vibrant charm of Goa, where sun-kissed beaches, lively culture, and unforgettable sunsets beckon you</div>
-                    <button>See More</button>
+                    <!-- <button>See More</button> -->
                 </div>
             </div>
             <div class="item-tour"
@@ -373,7 +405,7 @@
                 <div class="content">
                     <div class="name">Ladakh</div>
                     <div class="des">Embark on an adventure to Ladakh, where rugged landscapes and serene high-altitude beauty offer an unforgettable journey</div>
-                    <button>See More</button>
+                    <!-- <button>See More</button> -->
                 </div>
             </div>
             <div class="item-tour"
@@ -381,7 +413,7 @@
                 <div class="content">
                     <div class="name">Kerela</div>
                     <div class="des">Immerse yourself in Kerala's enchanting backwaters and lush landscapes, where tranquility and natural beauty create a paradise on Earth.</div>
-                    <button>See More</button>
+                    <!-- <button>See More</button> -->
                 </div>
             </div>
             <div class="item-tour"
@@ -389,7 +421,7 @@
                 <div class="content">
                     <div class="name">Rajasthan</div>
                     <div class="des">Step into the regal splendor of Rajasthan, where majestic forts, vibrant culture, and timeless deserts weave a captivating story of grandeur</div>
-                    <button>See More</button>
+                    <!-- <button>See More</button> -->
                 </div>
             </div>
             <div class="item-tour"
@@ -397,7 +429,7 @@
                 <div class="content">
                     <div class="name">Andaman</div>
                     <div class="des">Discover the pristine paradise of the Andaman Islands, where crystal-clear waters, white sandy beaches, and lush tropical beauty await your escape</div>
-                    <button>See More</button>
+                    <!-- <button>See More</button> -->
                 </div>
             </div>
         </div>
@@ -422,42 +454,42 @@
             <div class="content">
               <div class="name">Rajasthan Heritage Tour</div>
               <div class="des">Discover the Rajasthan Heritage Tour and immerse yourself in the regal splendor of Jaipur's City Palace, Udaipur's Lake Palace, Jodhpur's Mehrangarh Fort, and Jaisalmer's majestic fortifications.</div>
-              <button>See More</button>
+              <!-- <button>See More</button> -->
             </div>
           </div>
           <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-tajmahal-slider1.jpg');">
             <div class="content">
               <div class="name">Golden Triangle Tour</div>
               <div class="des">Explore the Golden Triangle Tour and experience India's iconic landmarks, from the majestic Taj Mahal and Red Fort to the grandeur of Amber Fort and the elegance of Hawa Mahal.</div>
-              <button>See More</button>
+              <!-- <button>See More</button> -->
             </div>
           </div>
           <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-qutubminar-slider3.jpg');">
             <div class="content">
               <div class="name">Delhi and Agra Heritage Tour</div>
               <div class="des">Explore the Delhi and Agra Heritage Tour, showcasing the majestic Red Fort and Qutub Minar, along with the iconic Taj Mahal and Agra Fort</div>
-              <button>See More</button>
+              <!-- <button>See More</button> -->
             </div>
           </div>
           <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-victoria-slider2.jpg');">
             <div class="content">
               <div class="name">Eastern India Heritage Tour</div>
               <div class="des">Experienc Eastern India Heritage Tour, featuring the Victoria Memorial and Howrah Bridge, the Darjeeling Himalayan Railway, and the monasteries of Sikkim.</div>
-              <button>See More</button>
+              <!-- <button>See More</button> -->
             </div>
           </div>
           <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-goldentemple-slider4.jpg');">
             <div class="content">
               <div class="name">Punjab Heritage Tour</div>
               <div class="des">Immerse yourself in the Punjab Heritage Tour, featuring the sacred Golden Temple, the historic Patiala Fort, and the Maharaja Ranjit Singh Museum.</div>
-              <button>See More</button>
+              <!-- <button>See More</button> -->
             </div>
           </div>
           <div class="item-tour"id="item-tour-2" style="background-image: url('./images/static/home/popular-tours-church-slider5.png');">
             <div class="content">
               <div class="name">Portuguese Heritage Tour</div>
               <div class="des">Discover the Goa Portuguese Heritage Tour, where you'll explore the Basilica of Bom Jesus, Se Cathedral, and the charming Fontainhas district in Old Goa and Panaji.</div>
-              <button>See More</button>
+              <!-- <button>See More</button> -->
             </div>
           </div>
         </div>
@@ -480,42 +512,42 @@
               <div class="content">
                 <div class="name">Bali Pass</div>
                 <div class="des">Balipass, in Himachal Pradesh, offers a thrilling trek with breathtaking views of the Kinnaur and Spiti valleys and a chance to explore untouched wilderness.</div>
-                <button>See More</button>
+                <!-- <button>See More</button> -->
               </div>
             </div>
             <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-manali.png');">
               <div class="content">
                 <div class="name">Manali</div>
                 <div class="des">Manali, nestled in Himachal Pradesh, is a vibrant destination offering stunning landscapes, thrilling adventure sports, and a gateway to serene mountain treks and scenic beauty</div>
-                <button>See More</button>
+                <!-- <button>See More</button> -->
               </div>
             </div>
             <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-hampta.png');">
               <div class="content">
                 <div class="name">Hampta</div>
                 <div class="des">The Hampta Pass trek in Himachal Pradesh offers a stunning journey through diverse landscapes, from lush valleys to rugged high-altitude terrain with breathtaking mountain views.</div>
-                <button>See More</button>
+                <!-- <button>See More</button> -->
               </div>
             </div>
             <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-bodhpathri.png');">
               <div class="content">
                 <div class="name">Bodhpathri</div>
                 <div class="des">Bodhpathri, in Jammu and Kashmir, offers a serene trek through lush meadows and dense forests, leading to picturesque views of the Himalayas and tranquil landscapes.</div>
-                <button>See More</button>
+                <!-- <button>See More</button> -->
               </div>
             </div>
             <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-goechala.png');">
               <div class="content">
                 <div class="name">Goechala</div>
                 <div class="des">Goechala, in Sikkim, provides an exhilarating trek with stunning views of Kanchenjunga, lush rhododendron forests, and dramatic high-altitude landscapes.</div>
-                <button>See More</button>
+                <!-- <button>See More</button> -->
               </div>
             </div>
             <div class="item-tour"id="item-tour-3" style="background-image: url('./images/static/home/popular-tours-sandakphu.png');">
               <div class="content">
                 <div class="name">Sandakphu</div>
                 <div class="des">Sandakphu, in West Bengal, delivers breathtaking panoramic views of Everest and Kanchenjunga, set against a backdrop of lush meadows and enchanting forests.</div>
-                <button>See More</button>
+                <!-- <button>See More</button> -->
               </div>
             </div>
           </div>

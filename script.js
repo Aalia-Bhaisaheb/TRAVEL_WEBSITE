@@ -155,3 +155,36 @@ document.addEventListener('DOMContentLoaded', function() {
       moveSlide3('prev');
   });
 });
+
+    document.getElementById('loginFormElement').addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        // Get form data
+        const email = document.querySelector('input[name="form2Example1_signin"]').value;
+        const password = document.querySelector('input[name="form2Example2_signin"]').value;
+
+        // Send login request to the server
+        fetch('/login', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ form2Example1_signin: email, form2Example2_signin: password })
+        })
+        .then(response => response.json())
+        .then(data => {
+            if (data.success) {
+                // Hide login form and show welcome message
+                document.getElementById('loginForm').style.display = 'none';
+                document.getElementById('welcomeMessage').style.display = 'block';
+                document.getElementById('userName').textContent = data.user;  // Set the username
+            } else {
+                // Handle error (optional)
+                alert(data.message);
+            }
+        })
+        .catch(error => {
+            console.error('Error during login:', error);
+            alert('Something went wrong, please try again.');
+        });
+    });
