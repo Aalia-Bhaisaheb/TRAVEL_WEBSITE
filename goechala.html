@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Goechala Packages</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="details.css">  
+ <link rel="stylesheet" href="guests.css"> 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+<body>
+  <!--Navbar-->
+<nav class="navbar navbar-expand-lg bg-white shadow pb-0 navbar-custom" id="nav-placeholder">
+  <div class="container-fluid">
+    <a class="navbar-brand px-5 ms-5" href="#">
+      <img src="/docs/5.0/assets/brand/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-3 column navbar-nav hcenter" id="flightsLink" aria-current="page" href="index.html">
+            <span class="wrapper">
+              <i class="fas fa-home header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">Home</span></a>
+        </li>
+        </div>
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-3 column navbar-nav hcenter" id="packagesLink" aria-current="page" href="packages.html"  rel="no-referrer" rel="noopener">
+            <span class="wrapper">
+              <i class="fas fa-suitcase-rolling header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">Packages</span></a>
+        </li>
+        </div>
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-3 column navbar-nav hcenter" id="trainsLink" aria-current="page" href="trains.html">
+            <span class="wrapper">
+              <i class="fas fa-users header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">About Us</span></a>
+        </li>
+        </div>
+        <div class="icon-text">
+          <!-- <i class="fas fa-plane-departure" style="color: #4b4c4e;"></i> -->
+        <li class="nav-item">
+          <span class="item-wrapper">
+            <a class="nav-link active mx-4 column navbar-nav hcenter" id="busesLink" aria-current="page" href="buses.html">
+            <span class="wrapper bus">
+              <i class="fas fa-phone header-icon"></i>
+            </span>
+          </span>
+          <span class="header-icon-text">Contact Us</span></a>
+        </li>
+        </div>
+      </ul>
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary shadow-none login-button me-5" data-bs-toggle="modal" data-bs-target="#exampleModal1">Login or Create Account</button>
+    </div>
+  </div>
+</nav>
+<!-- Modal -->
+<div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg modal-dialog-centered">
+    <div class="modal-content">
+        <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal" aria-label="Close"></button>
+      <div class="modal-body p-0">
+        <div class="container g-0">
+          <div class="row px-0 g-0">
+            <div class="d-none d-md-inline col-md-5 ps-3 py-2 pr-0">
+              <div id="carouselExampleCaptions1" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                  <button type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item drk active">
+                    <img src="./images/static/login-modal/slider1.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                      <h3>Find your</h3>
+                      <h3>Serenity</h3>
+                      <h3>Book Now!!</h3>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item drk">
+                    <img src="./images/static/login-modal/slider2.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                        <h3>Book Now</h3>
+                        <h3>to Dive into</h3>
+                        <h3>the THRILL!!</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item drk">
+                    <img src="./images/static/login-modal/slider3.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                        <h3>Secure</h3>
+                        <h3>your Spot</h3>
+                        <h3>Now!!</h3>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item drk">
+                    <img src="./images/static/login-modal/slider4.jpg" class="card border-0 d-block w-100" >
+                    <div class="carousel-caption d-none d-md-block">
+                      <div class="modal-cont">
+                        <h3>Don't Miss Out</h3>
+                        <h3>Grab Your</h3>
+                        <h3>Offers Today</h3>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+            <div class="col-md-7 col-sm-12 shadow-lg px-4 pt-5 pb-2">
+              <div id="signInForm" class="d-block">
+              <p class="fs-2 text-center">Sign In</p>
+              <div class="contain pt-4">
+                <form>
+                  <!-- Email input -->
+                  <div data-mdb-input-init class="form-outline mb-4 pt-3">
+                  <label class="form-label" for="form2Example1_signin">Email address</label>
+                  <input type="email" id="form2Example1_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Email-Address">
+                  </div>
+                  </div>
+                
+                  <!-- Password input -->
+                  <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                  <label class="form-label" for="form2Example2_signin">Password</label>
+                  <input type="password" id="form2Example2_signin" class="form-control shadow-none border-secondary font1" placeholder="Enter Password"/>
+                  </div>
+                
+                  <!-- 2 column grid layout for inline styling -->
+                  <div class="row mb-4">
+                    <!-- <div class="col px-3 g-0">
+                      <div class="form-check">
+                        <input class="form-check-input shadow-none" type="checkbox" value="" id="form2Example31" checked style="cursor: pointer;"/>
+                        <label class="form-check-label" for="form2Example31" style="cursor: pointer;"> Remember me </label>
+                      </div>
+                    </div> -->
+                    <div class="col-sm-12 forgot g-0 text-end">
+                      <!-- Simple link -->
+                      <a href="#!" id="showSignUp">Forgot password?</a>
+                    </div>
+                  </div>
+                  <div class="sign col pt-3">
+                     <!-- Submit button -->
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary shadow-none" type="button">Sign In</button>
+                  </div>
+                  </div>
+                  <!-- Register buttons -->
+                  <div class="text-center pt-4" id="txtContainer_signin">
+                    <a href="#" id="showSignUpLink" data-toggle="modal" data-target="#exampleModal2">Register</a>
+                  </div>                
+                </form>
+                <div class="pr text-center">
+                By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html" class="privacy"rel="no-referrer" rel="noopener">Privacy Policy</a>,<a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
+                </div>
+              </div>
+              <div id="signUpForm" class="form-container d-none">
+                <p class="fs-2 text-center">Sign Up</p>
+                <form>
+                  <!-- Sign Up Form Fields -->
+                  <div data-mdb-input-init class="form-outline mb-4 pt-3">
+                    <label class="form-label" for="form2Example1_signup">Email address</label>
+                    <input type="email" id="form2Example1_signup" class="form-control shadow-none border-secondary" placeholder="Enter Email-Address">
+                  </div>
+                  <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                    <label class="form-label" for="form2Example2_signup">Password</label>
+                    <input type="password" id="form2Example2_signup" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                    <small id="passwordHelp" class="form-text d-none">Password should contain at least 8 characters and one special character.</small>
+                  </div>
+                  <div data-mdb-input-init class="form-outline mb-4 pt-2">
+                    <label class="form-label" for="form2Example2_confirm">Confirm Password</label>
+                    <input type="password" id="form2Example2_confirm" class="form-control shadow-none border-secondary" placeholder="Enter Password"/>
+                  </div>
+                  <div class="d-grid gap-2">
+                    <button class="btn btn-primary shadow-none" type="button">Sign Up</button>
+                  </div>
+                  <div class="text-center pt-4">
+                    <a href="#" id="showSignInLink">Already have an account? Sign In</a>
+                  </div>
+                  <div class="pr text-center">
+                    By proceeding, you agree to JetSet-Journey <a href="privacy-policy.html" class="privacy">Privacy Policy</a>,<a href="terms.html">Agreement</a> and <a href="terms.html">T&Cs</a>
+                  </div>
+                </form>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="search-block" id="search-block">
+  <nav class="navbar nav-search navbar-expand-sm p-5 navbar-dark">
+    <div class="container-fluid search">
+      <div class="search-container">
+        <div class="d-inline search-bar-start"><p class="start">STARTING FROM</p>
+                 <select id="roleSel" class="select-option"name="role">
+                        <option value="delhi">New Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="kolkata">Kolkata</option>
+                        <option value="ahemdabad">Ahemdabad</option>
+                        <option value="hyderabad">Hyderabad</option>
+                 </select>
+        </div>
+        <div class="d-inline search-bar-start"><p>GOING TO</p>
+          <input type="text" class="form-control select-option d-place" placeholder="" >Goechala</div>
+          
+        <div class="d-inline search-bar-start">
+            <p>STARTING DATE</p>
+            <input type="text" id="datepicker" class="form-control select-option" readonly>
+        </div>
+        <div id="calendar-popup" class="calendar-popup">
+          <button id="close-calendar" class="close-btn"></button>
+          <input type="date" id="selected-date" />
+          <!-- Calendar will be dynamically generated here -->
+      </div>
+        <button class="btn search-btn" type="submit">SEARCH</button>
+      </div>
+    </div>
+  </nav>
+</div>
+  <div class="details">
+      <div class="cover-container">
+        <div class="cover-img ">
+          <img src="./images/static/packages/kerela/cover.jpg" alt="" srcset="">
+        </div>
+      </div>
+      <div id="cover-card" class="cover-card">
+        <div class="card card-cover">
+          <div class="card-body body-cover">
+               <div id="filter-card" class="col-sm-3">
+                <div class="card filter-card">
+                  <div class="card-body filter-body">
+                    <div class="filter-heading">FILTERS</div>
+                    <hr class="border-bottom border-1 border-dark">
+                    <div class="duration-nights">Duration (in Nights)</div>
+                    <input type="range" class="form-range" min="3" max="8" id="customRange2">
+                    <div class="range-wrapper">
+                      <div class="whole-range">3N</div>  
+                      <div class="whole-range">8N</div>  
+                    </div>
+                    <hr class="border-bottom border-1 border-dark duration-line">
+                    <div class="option-flights">Flights</div>
+                    <div class="choice-flight">
+                      <button type="button" class="btn btn-outline-dark shadow-sm" id="with-flight">With Flight</button>
+                    </div>
+                    <hr class="border-bottom border-1 border-dark duration-line">
+                    <div class="budget">Budget (per person)</div>
+                      <ul class="budget-list">
+                      <li>
+                      <input type="checkbox" id="budget1">
+                      <label for="budget1"><₹55,000</label>
+                      </li>
+                      <li>
+                      <input type="checkbox" id="budget2">
+                      <label for="budget2">₹55,000 - ₹65,000</label>
+                      </li>
+                      <li>
+                        <input type="checkbox" id="budget3">
+                        <label for="budget2">₹65,000 - ₹70,000</label>
+                        </li>
+                      <li>
+                      <input type="checkbox" id="budget4">
+                      <label for="budget3">> ₹70,000</label>
+                      </li>
+                      </ul>
+                      <hr class="border-bottom border-1 border-dark">
+                      <div class="budget">Hotel Category</div>
+                      <div class="choice-hotel-rating">
+                      <button type="button" class="btn btn-outline-dark shadow-sm hotel-rating" id="three-star">3★</button>
+                      <button type="button" class="btn btn-outline-dark shadow-sm hotel-rating" id="four-star">4★</button>
+                      <button type="button" class="btn btn-outline-dark shadow-sm hotel-rating" id="five-star">5★</button>
+                      </div>
+                  </div>
+                </div>
+                </div>
+                <div class="col-sm-9">
+                  <div class="card package-cards">
+                    <div class="card-body card-packages">
+                      <div class="card-flex">
+                      <div class="card card-block block-1 border" style="width: 25rem;"data-nights="7"data-price="64459"><a href="holiday_review.html?package=Goechala%20Trekking%20Adventure&price=46459" target="_blank">
+                        <div class="block-img">
+                          <img src="./images/static/packages/goechala/block1.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body body-block">
+                          <div class="card-text block-test">
+                            <div class="p-name">Goechala Trekking Adventure<div class="d-inline p-1 stay">7N/8D</div></div>
+                            <ul class="horizontal-list">
+                              <li>2N Panaji</li>
+                              <li>2N Baga</li>
+                              <li>1N Ponda</li>
+                              <li>2N Calangute</li>
+                            </ul>
+                            <hr class="border-bottom border-1 border-dark">
+                            <ul class="p-inc">
+                              <li>Round Trip Flights</li>
+                              <li>Intercity car transfers</li>
+                              <li>4 Stars 3 Stars Hotels</li>
+                              <li>Airport Transfers</li>
+                              <li>Selected Meals</li>
+                              <li>18 Activities</li>
+                            </ul>
+                            <div class="card card-sub">
+                              <div class="card-body block-sub">
+                                <div class="sub-content">
+                                  <div class="pricing">
+                                    <p class="price">₹46,459<span class="person">/Person</span></p>
+                                    <p class="total">Total Price 92,918</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-block block-1 border" style="width: 25rem;"data-nights="6"data-price="60885"id=><a href="holiday_review.html?package=Goechala%20Getaway:%20Fun%20In%20in%20the%20Sun&price=60885">
+                        <div class="block-img">
+                          <img src="./images/static/packages/goechala/block2.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body body-block">
+                          <div class="card-text block-test">
+                            <div class="p-name">Goechala Getaway: Fun in the Sun<div class="d-inline p-1 stay">6N/7D</div></div>
+                            <ul class="horizontal-list">
+                              <li>2N Panaji</li>
+                              <li>1N Baga</li>
+                              <li>1N Ponda</li>
+                              <li>2N Calangute</li>
+                            </ul>
+                            <hr class="border-bottom border-1 border-dark">
+                            <ul class="p-inc">
+                              <li>Round Trip Flights</li>
+                              <li>Intercity car transfers</li>
+                              <li>4 Stars 3 Stars Hotels</li>
+                              <li>Airport Transfers</li>
+                              <li>Selected Meals</li>
+                              <li>17 Activities</li>
+                            </ul>
+                            <div class="card card-sub">
+                              <div class="card-body block-sub">
+                                <div class="sub-content">
+                                  <div class="pricing">
+                                    <p class="price">₹60,885<span class="person">/Person</span></p>
+                                    <p class="total">Total Price 1,21,770</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card card-block block-1 border" style="width: 25rem;"data-nights="6"data-price="40,180"><a href="holiday_review.html?package=Goechala%20Explorer&price=40180">
+                        <div class="block-img">
+                          <img src="./images/static/packages/goechala/block3.png" class="card-img-top" alt="...">
+                        </div>
+                        <div class="card-body body-block">
+                          <div class="card-text block-test">
+                            <div class="p-name">Goechala Explorer<div class="d-inline p-1 stay">6N/7D</div></div>
+                            <ul class="horizontal-list">
+                              <li>2N Panaji</li>
+                              <li>2N Baga</li>
+                              <li>1N Ponda</li>
+                              <li>1N Calangute</li>
+                            </ul>
+                            <hr class="border-bottom border-1 border-dark">
+                            <ul class="p-inc">
+                              <li>Round Trip Flights</li>
+                              <li>Intercity car transfers</li>
+                              <li>4 Stars 3 Stars Hotels</li>
+                              <li>Airport Transfers</li>
+                              <li>Selected Meals</li>
+                              <li>13 Activities</li>
+                            </ul>
+                            <div class="card card-sub">
+                              <div class="card-body block-sub">
+                                <div class="sub-content">
+                                  <div class="pricing">
+                                    <p class="price">₹40,180<span class="person">/Person</span></p>
+                                    <p class="total">Total Price 80,360</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+          </a>
+          </div>
+        </div>
+      </div>
+
+
+    
+<script src="script.js"></script>
+<script src="guests.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</script>
+<!-- Custom JavaScript -->
+<script>
+
+  document.addEventListener('DOMContentLoaded', () => {
+    const rangeInput = document.getElementById('customRange2');
+    const packages = document.querySelectorAll('.card-block');
+
+    rangeInput.addEventListener('input', () => {
+        const selectedNights = parseInt(rangeInput.value);
+        
+        packages.forEach(package => {
+            const packageNights = parseInt(package.getAttribute('data-nights'));
+            if (packageNights === selectedNights) {
+                package.style.display = 'block'; // Show the package
+            } else {
+                package.style.display = 'none'; // Hide the package
+            }
+        });
+    });
+});
+document.addEventListener('DOMContentLoaded', () => {
+    const packages = document.querySelectorAll('.card-block');
+    const budgetCheckboxes = document.querySelectorAll('.budget-list input[type="checkbox"]');
+
+    // Function to filter packages based on selected budgets
+    const filterPackagesByBudget = () => {
+        const selectedBudgets = Array.from(budgetCheckboxes)
+            .filter(checkbox => checkbox.checked)
+            .map(checkbox => checkbox.id);
+
+        packages.forEach(package => {
+            const packagePrice = parseInt(package.getAttribute('data-price'));
+            let shouldDisplay = false;
+
+            if (selectedBudgets.includes('budget1') && packagePrice < 55000) {
+                shouldDisplay = true;
+            }
+            if (selectedBudgets.includes('budget2') && packagePrice >= 55000 && packagePrice < 65000) {
+                shouldDisplay = true;
+            }
+            if (selectedBudgets.includes('budget3') && packagePrice >= 65000 && packagePrice < 70000) {
+                shouldDisplay = true;
+            }
+            if (selectedBudgets.includes('budget4') && packagePrice >= 70000) {
+                shouldDisplay = true;
+            }
+
+            package.style.display = shouldDisplay ? 'block' : 'none'; // Show or hide package
+        });
+    };
+
+    // Attach event listeners to budget checkboxes
+    budgetCheckboxes.forEach(checkbox => {
+        checkbox.addEventListener('change', filterPackagesByBudget);
+    });
+});
+  document.addEventListener('DOMContentLoaded', function () {
+    const searchBlock = document.querySelector('.search-block');
+    const navbarHeight = document.querySelector('.navbar-custom').offsetHeight;
+    const coverCard = document.querySelector('#cover-card');
+    const searchBlockElement = document.getElementById("search-block");
+    const coverCardElement = document.getElementById("cover-card");
+
+    const searchBlockHeight = searchBlockElement.offsetHeight;
+    const coverCardHeight = coverCardElement.offsetHeight;
+
+    window.addEventListener('scroll', function () {
+      if (window.scrollY > navbarHeight) {
+        searchBlock.classList.add('fixed');
+      } else {
+        searchBlock.classList.remove('fixed');
+      }
+    });
+    flatpickr("#datepicker", {
+        minDate: "today",
+        maxDate: "28-02-2025",
+        dateFormat: "d-m-Y",
+        locale: {
+            firstDayOfWeek: 1 // Set the first day of the week to Monday
+        }
+    });
+    const calendarTrigger = document.getElementById('calendar-trigger');
+    const calendarPopup = document.getElementById('calendar-popup');
+    const selectedDateInput = document.getElementById('selected-date');
+    const closeCalendar = document.getElementById('close-calendar');
+
+    function formatDate(date) {
+        const day = String(date.getDate()).padStart(2, '0');
+        const month = String(date.getMonth() + 1).padStart(2, '0');
+        const year = date.getFullYear();
+        return `${day}-${month}-${year}`;
+    }
+
+    function generateCalendar() {
+        const today = new Date();
+        const endDate = new Date('28-02-25');
+        let calendarHTML = '<table><thead><tr>';
+        calendarHTML += '<th>Sun</th><th>Mon</th><th>Tue</th><th>Wed</th><th>Thu</th><th>Fri</th><th>Sat</th></tr></thead><tbody>';
+        
+        let currentDate = new Date(today.getFullYear(), today.getMonth(), 1);
+        currentDate.setDate(currentDate.getDate() - currentDate.getDay()); // Adjust to start from Sunday
+
+        while (currentDate <= endDate) {
+            calendarHTML += '<tr>';
+            for (let i = 0; i < 7; i++) {
+                calendarHTML += `<td${currentDate > endDate ? ' class="disabled"' : ''} data-date="${currentDate.toISOString().split('T')[0]}">${currentDate.getDate()}</td>`;
+                currentDate.setDate(currentDate.getDate() + 1);
+            }
+            calendarHTML += '</tr>';
+        }
+        
+        calendarHTML += '</tbody></table>';
+        return calendarHTML;
+    }
+    
+    function toggleCalendar() {
+        calendarPopup.style.display = calendarPopup.style.display === 'block' ? 'none' : 'block';
+        if (calendarPopup.style.display === 'block') {
+            calendarPopup.innerHTML = generateCalendar() + '<button id="close-calendar" class="close-btn">X</button>';
+            closeCalendar = document.getElementById('close-calendar');
+        }
+    }
+    
+    function closeCalendarPopup() {
+        calendarPopup.style.display = 'none';
+    }
+
+    calendarTrigger.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent the click event from closing the calendar
+        toggleCalendar();
+    });
+    
+    calendarPopup.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent clicks inside the calendar from closing it
+        if (event.target.tagName === 'TD' && !event.target.classList.contains('disabled')) {
+            const selectedDate = event.target.getAttribute('data-date');
+            selectedDateInput.value = selectedDate;
+            closeCalendarPopup(); // Close the calendar after selecting a date
+        }
+    });
+
+    document.addEventListener('click', function (event) {
+        if (!calendarPopup.contains(event.target) && !calendarTrigger.contains(event.target)) {
+            closeCalendarPopup();
+        }
+    });
+
+    closeCalendar.addEventListener('click', function (event) {
+        event.stopPropagation(); // Prevent the click event from closing the calendar
+        closeCalendarPopup();
+    });
+  });
+
+
+function getParameterByName(name) {
+    const url = window.location.href;
+    name = name.replace(/[\[\]]/g, '\\$&');
+    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+
+
+
+
+
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+</script>
+</body>
+</html>
